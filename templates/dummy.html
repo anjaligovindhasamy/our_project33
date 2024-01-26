@@ -12,7 +12,14 @@
     {% endblock %}
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav>
+
+      <a href="{% url 'admin:index' %}" class="nav-link">Admin Page</a>
+      <a href="{% url 'registration' %}" class="nav-link">registration</a>
+      <a href="{% url 'home'%}" class="nav-link">home</a>
+      <a href="{% url 'user_login'%}" class="user_login">user_login</a>
+      
+    </nav>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
